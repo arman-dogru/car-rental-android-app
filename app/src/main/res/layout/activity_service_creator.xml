@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceCreatorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_to_admin_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="56dp" />
+
+        <EditText
+            android:id="@+id/new_service_name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/new_service_price_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/price"
+            android:inputType="number" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="362dp">
+
+            <LinearLayout
+                android:id="@+id/documents_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/firstName_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Name" />
+
+                <CheckBox
+                    android:id="@+id/lastName_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name" />
+
+                <CheckBox
+                    android:id="@+id/DOB_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="D.O.B." />
+
+                <CheckBox
+                    android:id="@+id/address_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address" />
+
+                <CheckBox
+                    android:id="@+id/email_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email" />
+
+                <CheckBox
+                    android:id="@+id/licenceType_checkbox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Truck Licence Type" />
+
+                <CheckBox
+                    android:id="@+id/licenceType_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car Licence Type" />
+
+                <CheckBox
+                    android:id="@+id/carType_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Truck Type" />
+
+                <CheckBox
+                    android:id="@+id/carType_checkbox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car Type" />
+
+                <CheckBox
+                    android:id="@+id/pickupDate_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Truck Pickup Date and Time" />
+
+                <CheckBox
+                    android:id="@+id/returnDate_checkbox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Truck Return Date and Time" />
+
+                <CheckBox
+                    android:id="@+id/pickupDate_checkbox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car Pickup Date and Time" />
+
+                <CheckBox
+                    android:id="@+id/returnDate_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Car Return Date and Time" />
+
+                <CheckBox
+                    android:id="@+id/mileage_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mileage" />
+
+                <CheckBox
+                    android:id="@+id/regionTruck_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Region (Trucks)" />
+
+                <CheckBox
+                    android:id="@+id/movingStartLocation_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Moving Start Location" />
+
+                <CheckBox
+                    android:id="@+id/movingEndLocation_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Moving End Location" />
+
+                <CheckBox
+                    android:id="@+id/numberOfMovers_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Movers Required" />
+
+                <CheckBox
+                    android:id="@+id/numberOfBoxes_checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Boxes" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/save_service_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Service" />
+
+    </LinearLayout>
+</RelativeLayout>

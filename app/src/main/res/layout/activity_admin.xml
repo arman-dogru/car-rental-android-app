@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/allRequests"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/purple_500"
+            android:text="Service Manager"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/logoffButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logoff" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="277dp">
+
+            <LinearLayout
+                android:id="@+id/services_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/example_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="example Service" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/open_services_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add service" />
+
+            <Button
+                android:id="@+id/open_accounts_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Accounts" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/service_name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/service_name"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/edit_service_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Service" />
+
+        <Button
+            android:id="@+id/remove_service_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove Service" />
+
+    </LinearLayout>
+</RelativeLayout>

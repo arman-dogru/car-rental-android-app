@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bybloscar">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ByblosCar">
+        <activity
+            android:name=".RequestDocumentsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BranchProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchResultsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchByWorkHoursActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchByServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchByAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkingHoursActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BranchAddressActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RequestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CustomerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AccountManagerActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ServiceCreatorActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".EmployeeActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
